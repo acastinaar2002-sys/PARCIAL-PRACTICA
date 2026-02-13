@@ -248,7 +248,7 @@ const GlobalExam: React.FC<{ questions: InteractiveCase[]; onExit: () => void }>
           </button>
         ))}
       </div>
-      <button onClick={onExit} className="mt-16 text-slate-400 font-black uppercase tracking-[0.4em] text-[10px] hover:text-slate-900 transition-colors flex items-center gap-4 mx-auto">
+      <button onClick={onExit} className="mt-16 text-slate-400 font-black uppercase tracking-[0.4em] text-[10px] hover:text-slate-950 transition-colors flex items-center gap-4 mx-auto">
         <div className="w-8 h-px bg-slate-200"></div> Volver al Panel de Estudio <div className="w-8 h-px bg-slate-200"></div>
       </button>
     </div>
@@ -335,7 +335,7 @@ const CardView: React.FC<{ card: Flashcard; currentIndex: number; total: number;
 
       <div className="grid grid-cols-2 gap-8 mt-14">
         <button onClick={(e) => { e.stopPropagation(); onPrev(); }} disabled={currentIndex === 0} className="py-7 bg-white border-2 border-slate-100 font-black rounded-[2rem] text-slate-700 hover:border-slate-300 disabled:opacity-30 disabled:grayscale transition-all shadow-lg active:scale-95 uppercase tracking-widest">Anterior</button>
-        <button onClick={(e) => { e.stopPropagation(); onNext(); }} className="py-7 bg-blue-600 text-white font-black rounded-[2rem] shadow-2xl shadow-blue-600/30 hover:bg-slate-900 transition-all active:scale-95 uppercase tracking-widest">Siguiente</button>
+        <button onClick={(e) => { e.stopPropagation(); onNext(); }} className="py-7 bg-blue-600 text-white font-black rounded-[2rem] shadow-2xl shadow-blue-600/30 hover:bg-slate-950 transition-all active:scale-95 uppercase tracking-widest">Siguiente</button>
       </div>
       
       {hasLab && (
