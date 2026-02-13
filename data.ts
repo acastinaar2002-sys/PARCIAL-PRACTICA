@@ -1,6 +1,64 @@
 
 import { Module, InteractiveCase, Flashcard } from './types';
 
+export interface TrueFalseQuestion {
+  id: string;
+  statement: string;
+  isTrue: boolean;
+  explanation: string;
+}
+
+export const TRUE_FALSE_QUESTIONS: TrueFalseQuestion[] = [
+  {
+    id: "tf-1",
+    statement: "Un 'Atributo' se define como la ausencia de datos duplicados.",
+    isTrue: false,
+    explanation: "Falso. La ausencia de duplicados se conoce como Unicidad. Un atributo es una característica de una entidad."
+  },
+  {
+    id: "tf-2",
+    statement: "La 'Tabla' es una estructura que almacena datos en filas y columnas.",
+    isTrue: true,
+    explanation: "Verdadero. Es la unidad básica de almacenamiento en el modelo relacional."
+  },
+  {
+    id: "tf-3",
+    statement: "La 1FN elimina valores múltiples y exige que los datos sean atómicos.",
+    isTrue: true,
+    explanation: "Verdadero. La atomicidad es el pilar de la primera forma normal."
+  },
+  {
+    id: "tf-4",
+    statement: "Un SGBD se define técnicamente como un atributo que referencia a otra tabla.",
+    isTrue: false,
+    explanation: "Falso. Eso describe una Llave Foránea (FK). El SGBD es el software gestor completo."
+  },
+  {
+    id: "tf-5",
+    statement: "La 'Planificación' es la fase de actualización y mejoras continuas del ciclo de vida.",
+    isTrue: false,
+    explanation: "Falso. Esa fase es el 'Mantenimiento'. La planificación ocurre al inicio del proyecto."
+  },
+  {
+    id: "tf-6",
+    statement: "La dependencia transitiva ocurre cuando un atributo depende de otro atributo no clave.",
+    isTrue: true,
+    explanation: "Verdadero. Esta condición es la que se busca eliminar en la 3FN."
+  },
+  {
+    id: "tf-7",
+    statement: "El 'Nivel Físico' de abstracción describe lo que ve el usuario final.",
+    isTrue: false,
+    explanation: "Falso. El nivel que ve el usuario es el 'Nivel Vista'. El físico describe el almacenamiento en disco."
+  },
+  {
+    id: "tf-8",
+    statement: "La Integridad Referencial evita que existan datos huérfanos en la base de datos.",
+    isTrue: true,
+    explanation: "Verdadero. Asegura que cada FK apunte a una PK válida y existente."
+  }
+];
+
 export const FINAL_EXAM_QUESTIONS: InteractiveCase[] = [
   {
     id: "fe-1",
